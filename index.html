@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="atlantic division">Atlantic
+					<ul class="teams">
+						<li data-team="bruins" class="team boston">bruins</li>
+						<li data-team="sabres" class="team buffalo">sabres</li>
+						<li data-team="redwings" class="team detroit">red wings</li>
+						<li data-team="panthers" class="team florida">panthers</li>
+						<li data-team="canadiens" class="team montreal">canadiens</li>
+						<li data-team="senators" class="team ottawa">senators</li>
+						<li data-team="lightning" class="team tampa">lightning</li>
+						<li data-team="leafs" class="team toronto">leafs</li>
+					</ul>
+				</li>
+				<li class="metropolitan division">Metropolitan
+					<ul class="teams">
+						<li data-team="hurricanes" class="team carolina">hurricanes</li>
+						<li data-team="jackets" class="team columbus">blue jackets</li>
+						<li data-team="devils" class="team nj">devils</li>
+						<li data-team="islanders" class="team nyi">islanders</li>
+						<li data-team="rangers" class="team nyr">rangers</li>
+						<li data-team="flyers" class="team philly">flyers</li>
+						<li data-team="penguins" class="team pittsburgh">penguins</li>
+						<li data-team="capitals " class="team washington">capitals</li>
+					</ul>		
+				</li>
+			</ul>
+		</nav>
+		<div class="stripe top"></div>
+		<div class="stripe middle"></div>
+		<div class="stripe bottom"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+		$('document').ready(function() {
+
+		});
+
+		$('li.team').on('click', function() {
+			$('body').removeClass().addClass($(this).attr('data-team'));
+		});
+		</script>
+	</body>
+</html>
